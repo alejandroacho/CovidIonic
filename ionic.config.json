@@ -1,5 +1,7 @@
 {
   "name": "CovidIonic",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
