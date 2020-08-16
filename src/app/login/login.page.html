@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
 
-<ion-content>
+  <figure text-center>
+    <img src="assets/img/logo.png" text-center padding/>
+  </figure>
+
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+    
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-input formControlName="email"></ion-input>
+    </ion-item>
+    
+    <br>
+    
+    <ion-item>
+      <ion-label>Contraseña:</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <br>
+    {{ errorMessage }}
+    <ion-button expand="full" shape="round" color="success" type="submit"
+    [disabled]="!loginForm.valid"
+    >Inicia Sesión</ion-button>
+    
+  </form>
+
+  <br>
+
+  <ion-button expand="full" fill="outline" shape="round" color="success" type="">Regístrate</ion-button>
 
 </ion-content>
+
+<ion-footer>
+
+  <p>®CovidSualize</p>
+
+</ion-footer>

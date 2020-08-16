@@ -16,8 +16,8 @@ export class IntroPage implements OnInit {
   }
   slides = [{
     img: "assets/img/virus.png",
-    tittle: "CovidSualize",
-    description: "Visualiza cuantos casos de covid hay en tu región mientras escuchas linkn park de fondo."
+    tittle: "Covid",
+    description: "Visualiza cuantos casos de covid hay en tu región con datos actualizados mientras escuchas linkin park de fondo."
   },
   {
     img: "assets/img/audio.png",

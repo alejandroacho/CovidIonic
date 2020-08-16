@@ -1,10 +1,22 @@
 <ion-content class="ion-padding">
   <ion-slides pager="true" [options]="slideOpt">
-    <ion-slide *ngFor="let slide of slides">
-      <ion-icon name="close" (click)="finish()"></ion-icon>
-      <img src="{{slide.img}}"/>
-      <h1>{{slide.tittle}}</h1>
-      <p>{{slide.description}}</p>
+
+    <ion-slide>
+      <figure text-center>
+        <img src="assets/img/virus.png" text-center padding/>
+      </figure>
+      <h1>Covid</h1>
+      <p>Visualiza cuantos casos de covid hay en tu región con datos actualizados mientras escuchas linkin park de fondo.</p>
     </ion-slide>
+
+    <ion-slide>
+      <ion-icon name="close" (click)="finish()"></ion-icon>
+      <figure text-center>
+        <img src="assets/img/audio.png" text-center padding/>
+      </figure>
+      <h1>Música</h1>
+      <p>La música pretende ser una referencia cultural al mundo del internet. No pretende ser en ningun caso una burla u ofensa a los caídos.</p>
+    </ion-slide>
+
   </ion-slides>
 </ion-content>
