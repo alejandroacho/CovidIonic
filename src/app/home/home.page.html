@@ -1,3 +1,71 @@
 <ion-content class="ion-padding">
 
+  <figure text-center>
+    <img src="assets/img/logo.png" text-center padding/>
+  </figure>
+
+    <ion-slides pager="true" [options]="slideOpt">
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/paciente.png" text-center padding/>  
+        </figure>
+        <h1>Nuevos casos</h1>
+        <p>{{newCases}}</p>
+
+        </ion-slide>
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/craneo.png" text-center padding/>
+        </figure>
+        <h1>Nuevas muertes</h1>
+        <p>{{newDeaths}}</p>
+        </ion-slide>
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/gimnasio.png" text-center padding/>
+        </figure>
+        <h1>Nuevas recuperaciones</h1>
+        <p>{{newRecovered}}</p>
+        </ion-slide>
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/craneo.png" text-center padding/>
+        </figure>
+        <h1>Total de casos</h1>
+        <p>{{totalCases}}</p>
+        </ion-slide>
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/craneo.png" text-center padding/>
+        </figure>
+        <h1>Total de muertes</h1>
+        <p>{{totalDeaths}}</p>
+        </ion-slide>
+
+        <ion-slide>
+        <figure text-center>
+            <img src="assets/img/craneo.png" text-center padding/>
+        </figure>
+        <h1>Total de recuperaciones</h1>
+        <p>{{totalRecovered}}</p>
+        </ion-slide>
+
+    </ion-slides>
+
+
+  <br>
+
+  <ion-button expand="full" fill="outline" shape="round" color="success" type="">Cerrar sesión</ion-button>
+  <ion-button expand="full" fill="outline" shape="round" color="success" type="">Refrescar</ion-button>
+  <ion-button expand="full" shape="round" color="success" type="">Reproducir</ion-button>
+
 </ion-content>
+
+<ion-footer>
+  <p>®CovidSualize</p>
+</ion-footer>

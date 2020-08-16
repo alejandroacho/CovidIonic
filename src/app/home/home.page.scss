@@ -1,4 +1,36 @@
-ion-content {
-    --background: var(--ion-color-success);
-    font-family: "Times New Roman", Times, serif;
-  }
+img { 
+  max-height: 80px;
+  margin: auto;
+  display: block;
+}
+ion-footer{
+  display: block;
+  text-align: center;
+}
+
+ion-slides {
+  background-color: white;
+  height: 40%;
+  max-width: 800px;
+}
+.swiper-slide {
+  display: block;
+  background-color: white;
+}
+ion-slide > h1,
+h2 {
+  margin: 0 0 0 0;
+}
+ion-slide > p {
+  font-style: italic;
+  font-size: 22px;
+}
+ion-slide > ion-icon {
+  color: var(--ion-color-success);
+  font-size: 48px;
+}
+ion-slide > ion-icon[name="close"] {
+  float: right;
+  color: var(--ion-color-primary);
+  font-size: 48px;
+}
